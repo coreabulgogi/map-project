@@ -9,13 +9,13 @@
 <body>
 
     <h1>매장현황</h1>
-    <div id="map" style="width:1000px;height:800px;"></div>
+    <div id="map" style="width:900px;height:900px;"></div>
 
     <script>
         var container = document.getElementById('map'); // 지도를 표시할 div
         var options = {
             center: new kakao.maps.LatLng(37.5665, 126.9780), // 초기 지도 중심 (서울 좌표)
-            level: 3 // 지도 확대 레벨 (낮을수록 확대)
+            level: 4 // 지도 확대 레벨 (낮을수록 확대)
         };
 
         var map = new kakao.maps.Map(container, options); // 지도 생성
