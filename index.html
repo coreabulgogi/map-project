@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오맵 예제</title>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6956432726c3dc8f834ab6cf0dea4cd4"></script>
+</head>
+<body>
+
+    <h1>내 지도</h1>
+    <div id="map" style="width:500px;height:400px;"></div>
+
+    <script>
+        var container = document.getElementById('map'); // 지도를 표시할 div
+        var options = {
+            center: new kakao.maps.LatLng(37.5665, 126.9780), // 초기 지도 중심 (서울 좌표)
+            level: 3 // 지도 확대 레벨 (낮을수록 확대)
+        };
+
+        var map = new kakao.maps.Map(container, options); // 지도 생성
+    </script>
+
+</body>
+</html>
